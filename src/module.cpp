@@ -63,10 +63,8 @@ namespace g_cheat::memory {
 			}
 			
 			//process image data
-			//PIMAGE_NT_HEADERS current_nt_header = (PIMAGE_NT_HEADERS)(m_module + (m_module.as<PIMAGE_DOS_HEADER>())->e_lfanew);
 			PIMAGE_NT_HEADERS current_nt_header = m_module.add<PIMAGE_NT_HEADERS>(m_module.as<PIMAGE_DOS_HEADER>()->e_lfanew);
 
-			//PIMAGE_EXPORT_DIRECTORY export_dir = (PIMAGE_EXPORT_DIRECTORY)(m_module + current_nt_header->OptionalHeader.DataDirectory[0].VirtualAddress);
 			PIMAGE_EXPORT_DIRECTORY export_dir = m_module.add<PIMAGE_EXPORT_DIRECTORY>(current_nt_header->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress);
 			
 			//process list
@@ -77,7 +75,6 @@ namespace g_cheat::memory {
 
 				int str_length = g_mini_crt::string::str_len(name);
 				if (!g_mini_crt::string::str_cmp(name, current_export_name, str_length)) {
-					//return c_address(m_module + ((DWORD*)(m_module + export_dir->AddressOfFunctions))[idx]);
 					return m_module.add(m_module.add<DWORD*>(export_dir->AddressOfFunctions)[idx]);
 				}
 			} 
