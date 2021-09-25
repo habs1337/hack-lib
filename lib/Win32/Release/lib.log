@@ -1,0 +1,36 @@
+﻿cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+  color.cpp
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+  hook_manager.cpp
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+  math.cpp
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+  module.cpp
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+  vec2.cpp
+  vec3.cpp
+  vec4.cpp
+  world_to_screen.cpp
+D:\coding\stuff\hack-lib\src\vec4.cpp(18,10): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\vec4.cpp(19,10): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\vec4.cpp(20,10): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\color.cpp(17,8): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\color.cpp(18,8): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\color.cpp(19,8): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\color.cpp(20,8): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\color.cpp(53,30): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\coding\stuff\hack-lib\src\color.cpp(53,52): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\coding\stuff\hack-lib\src\color.cpp(53,73): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\coding\stuff\hack-lib\src\color.cpp(53,95): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\coding\stuff\hack-lib\src\math.cpp(45,119): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\math.cpp(46,69): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\vec3.cpp(17,10): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\vec3.cpp(18,10): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\vec3.cpp(19,10): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\vec2.cpp(16,10): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\coding\stuff\hack-lib\src\vec2.cpp(17,10): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  lib.vcxproj -> D:\coding\stuff\hack-lib\output\hack_lib.x86.lib

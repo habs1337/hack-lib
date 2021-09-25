@@ -1,0 +1,18 @@
+﻿cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+  color.cpp
+  hook_manager.cpp
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+  math.cpp
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
+  module.cpp
+  vec2.cpp
+  vec3.cpp
+  vec4.cpp
+  world_to_screen.cpp
+  lib.vcxproj -> D:\coding\stuff\hack-lib\output\debug_hack_lib.x86.lib

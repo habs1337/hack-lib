@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="string">
+      <UniqueIdentifier>{aa25c36c-23a2-4864-8b91-2989bb169cdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{2adf466a-45b4-49ca-b791-f912ad952cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inline">
+      <UniqueIdentifier>{18c37c7b-66ef-4349-a36d-310b0e885312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes">
+      <UniqueIdentifier>{275a630d-b765-4757-937d-cb1d97bd6ee7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\includes\inline.h">
+      <Filter>inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\memory.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\vector.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\string.h">
+      <Filter>string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\includes.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\memory.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\string.cpp">
+      <Filter>string</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

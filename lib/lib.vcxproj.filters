@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vectors">
+      <UniqueIdentifier>{7ef19566-ca72-41f6-8ada-fd20ae86edd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vectors\vector2d">
+      <UniqueIdentifier>{13c931cf-0929-4538-9b39-ec149ef7df27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vectors\vector3d">
+      <UniqueIdentifier>{5da1cca6-e007-4d73-8d69-05bfcb5bd4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{7c8c1ed1-a69f-4f10-a3fe-4a141ebeb49b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="color">
+      <UniqueIdentifier>{b78238a2-68d5-47ec-aa88-66132098ad17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inline">
+      <UniqueIdentifier>{414aad2e-2f98-4ee5-b96f-f98ba8381afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vectors\vector4d">
+      <UniqueIdentifier>{93311fbb-5da5-431b-8fe7-bdfc7ca91a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{de3506a7-d1d6-411e-95ac-38d10e3dcebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{6f063d2e-b1b3-4e81-993b-3bd732b176e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xorstr">
+      <UniqueIdentifier>{c6db4813-6784-410b-aba4-a234c66196c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vectors\matrix">
+      <UniqueIdentifier>{5335ca44-01f3-45c7-91cb-fa29360259d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="address">
+      <UniqueIdentifier>{6f46364b-3c73-49a6-8839-9b81bf2f44e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="world_to_screen">
+      <UniqueIdentifier>{b6c17244-da2e-46d1-a3dc-25ca253b5f98}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\includes\address.h">
+      <Filter>address</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\color.h">
+      <Filter>color</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\inline.h">
+      <Filter>inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\math.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\module.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\vec2.h">
+      <Filter>vectors\vector2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\vec3.h">
+      <Filter>vectors\vector3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\vec4.h">
+      <Filter>vectors\vector4d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\hook_manager.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\xorstr.h">
+      <Filter>xorstr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\matrix4x4.h">
+      <Filter>vectors\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\world_to_screen.h">
+      <Filter>world_to_screen</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\color.cpp">
+      <Filter>color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\module.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\vec2.cpp">
+      <Filter>vectors\vector2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\vec3.cpp">
+      <Filter>vectors\vector3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\vec4.cpp">
+      <Filter>vectors\vector4d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hook_manager.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\world_to_screen.cpp">
+      <Filter>world_to_screen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\mini_crt\ret_addr.asm">
+      <Filter>address</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
