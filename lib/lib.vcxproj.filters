@@ -40,6 +40,12 @@
     <Filter Include="world_to_screen">
       <UniqueIdentifier>{b6c17244-da2e-46d1-a3dc-25ca253b5f98}</UniqueIdentifier>
     </Filter>
+    <Filter Include="exception_manager">
+      <UniqueIdentifier>{608484dd-2f33-402d-8fb8-2c625e298ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread_manager">
+      <UniqueIdentifier>{e47126c3-3607-4756-91d9-367e8e2bd7f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\includes\address.h">
@@ -78,6 +84,12 @@
     <ClInclude Include="..\includes\world_to_screen.h">
       <Filter>world_to_screen</Filter>
     </ClInclude>
+    <ClInclude Include="..\includes\exception_manager.h">
+      <Filter>exception_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\includes\thread_manager.h">
+      <Filter>thread_manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\color.cpp">
@@ -103,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="..\src\world_to_screen.cpp">
       <Filter>world_to_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\exception_manager.cpp">
+      <Filter>exception_manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

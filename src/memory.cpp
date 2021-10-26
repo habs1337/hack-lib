@@ -1,7 +1,5 @@
 #include "../includes/includes.h"
-//#ifdef _WIN64
-//PVOID g_mini_crt::memory::red_addr::ReturnAddressStubEnc = 0;
-//#endif
+
 
 
 namespace g_mini_crt::memory {

@@ -35,6 +35,33 @@ namespace g_cheat::math {
 		return value * (M_PI / 180.f);
 	}
 
+	template<typename T>
+	inline T my_abs(T t) {
+		return t > 0 ? t : -t;
+	}
+
+	float my_atan2(const float y, const float x) {
+		if (x == 0.0f) {
+			if (y > 0.0f) return M_HALF_PI;
+			if (y == 0.0f) return 0.0f;
+			return -M_HALF_PI;
+		}
+		float atan;
+		float z = y / x;
+		if (my_abs<float>(z) < 1.0f) {
+			atan = z / (1.0f + 0.28f * z * z);
+			if (x < 0.0f) {
+				if (y < 0.0f) return atan - M_PI;
+				return atan + M_PI;
+			}
+		}
+		else {
+			atan = M_HALF_PI - z / (z * z + 0.28f);
+			if (y < 0.0f) return atan - M_PI;
+		}
+		return atan;
+	}
+
 
 	void vector_angles(g_cheat::sdk::c_vec2 forward, g_cheat::sdk::c_vec2& angles) {
 		if (forward.get_y() == 0.0f && forward.get_x() == 0.0f) {
@@ -42,8 +69,8 @@ namespace g_cheat::math {
 			angles.get_y() = 0.0f;
 		}
 		else {
-			angles.get_x() = atan2(0.f, sqrtf(forward.get_x() * forward.get_x() + forward.get_y() + forward.get_y())) * -180.f / M_PI;
-			angles.get_y() = atan2(forward.get_y(), forward.get_x()) * 180.f / M_PI;
+			angles.get_x() = my_atan2(0.f, sqrt(forward.get_x() * forward.get_x() + forward.get_y() + forward.get_y())) * -180.f / M_PI;
+			angles.get_y() = my_atan2(forward.get_y(), forward.get_x()) * 180.f / M_PI;
 
 			if (angles.get_y() > 90)
 				angles.get_y() -= 180;

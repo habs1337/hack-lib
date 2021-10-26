@@ -389,14 +389,14 @@ namespace g_mini_crt::string {
 	}
 
 	void debug_text(const char* text, uintptr_t val, int notation, uintptr_t spoof_caller_address) {
-		g_cheat::memory::c_address virtual_caller(spoof_caller_address);
-
+		
 		char text_val[12];
 		int meme;
 		itoa(val, text_val, notation);
 
 		int str_length = strlen(text) + strlen(text_val) + 1;
 #ifdef _WIN64
+		g_cheat::memory::c_address virtual_caller(spoof_caller_address);
 		char* str = reinterpret_cast<char*>(virtual_caller.call_spoofed_function<LPVOID>(HeapAlloc, GetProcessHeap(), HEAP_ZERO_MEMORY, str_length));
 #else
 		char* str = reinterpret_cast<char*>(HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, str_length));
@@ -416,14 +416,14 @@ namespace g_mini_crt::string {
 	}
 	
 	void debug_text(const char* text, float val, uintptr_t spoof_caller_address) {
-		g_cheat::memory::c_address virtual_caller(spoof_caller_address);
-
+		
 		char text_val[12];
 		int meme;
 		ftoa(val, text_val, 3);
 
 		int str_length = strlen(text) + strlen(text_val) + 1;
 #ifdef _WIN64
+		g_cheat::memory::c_address virtual_caller(spoof_caller_address);
 		char* str = reinterpret_cast<char*>(virtual_caller.call_spoofed_function<LPVOID>(HeapAlloc, GetProcessHeap(), HEAP_ZERO_MEMORY, str_length));
 #else
 		char* str = reinterpret_cast<char*>(HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, str_length));

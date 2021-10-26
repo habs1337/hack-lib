@@ -3,7 +3,6 @@
 #include <cstdint>
 #include <winternl.h> 
 #include <heapapi.h>
-//#include <iostream>
 
 
 //mini_crt
@@ -17,6 +16,7 @@
 #define JM_XORSTR_DISABLE_AVX_INTRINSICS
 #define FLT_EPSILON 1.192092896e-07F
 #define M_PI 3.14159265358979323846f
+#define M_HALF_PI 1.570796f;
 #define DO_ONCE(c) static bool do_once = false; if (!do_once) { c do_once = true; } 
 
 #include "matrix4x4.h"
@@ -30,5 +30,15 @@
 #include "xorstr.h"
 #include "hook_manager.h"
 #include "world_to_screen.h"
+
+#ifdef CUSTOM_MINI_CRT_DISABLED
+#include <thread>
+#include <map>
+#include <WinUser.h>
+#include <fstream> 
+
+#include "exception_manager.h"
+#include "thread_manager.h"
+#endif
 
 

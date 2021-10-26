@@ -180,11 +180,13 @@
   <ItemGroup>
     <ClInclude Include="..\includes\address.h" />
     <ClInclude Include="..\includes\color.h" />
+    <ClInclude Include="..\includes\exception_manager.h" />
     <ClInclude Include="..\includes\hook_manager.h" />
     <ClInclude Include="..\includes\inline.h" />
     <ClInclude Include="..\includes\math.h" />
     <ClInclude Include="..\includes\matrix4x4.h" />
     <ClInclude Include="..\includes\module.h" />
+    <ClInclude Include="..\includes\thread_manager.h" />
     <ClInclude Include="..\includes\vec2.h" />
     <ClInclude Include="..\includes\vec3.h" />
     <ClInclude Include="..\includes\vec4.h" />
@@ -193,6 +195,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\color.cpp" />
+    <ClCompile Include="..\src\exception_manager.cpp" />
     <ClCompile Include="..\src\hook_manager.cpp" />
     <ClCompile Include="..\src\math.cpp" />
     <ClCompile Include="..\src\module.cpp" />
