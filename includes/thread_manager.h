@@ -25,12 +25,12 @@ namespace g_cheat::memory {
         }
 
         void delete_thread(const std::string& thread_name) {
-            m_threads[thread_name].join();
+            m_threads[thread_name].detach();
         }
 
         void delete_threads() {
             for (auto& current_thread : m_threads) {
-                current_thread.second.join();
+                current_thread.second.detach();
             }
 
             FreeLibrary(m_cheat_module);

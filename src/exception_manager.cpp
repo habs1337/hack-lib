@@ -38,10 +38,10 @@ namespace g_cheat::memory::exception_manager {
         }
         else {
             g_mini_crt::string::debug_text("could not write to file!");
-            g_mini_crt::string::debug_text("exception offset", reinterpret_cast<uintptr_t>(exception_record->ExceptionAddress) - base_module_handle, 16);
+            g_mini_crt::string::debug_integer("exception offset", reinterpret_cast<uintptr_t>(exception_record->ExceptionAddress) - base_module_handle, 16, 0);
         }
 #else
-        g_mini_crt::string::debug_text("exception offset", reinterpret_cast<uintptr_t>(exception_record->ExceptionAddress) - base_module_handle, 16);
+        g_mini_crt::string::debug_integer("exception offset", reinterpret_cast<uintptr_t>(exception_record->ExceptionAddress) - base_module_handle, 16, 0);
 #endif
         return EXCEPTION_CONTINUE_EXECUTION;
     }

@@ -54,7 +54,7 @@ namespace g_mini_crt::string {
 	char* ftoa(double f, char* buf, int precision);
 	wchar_t* wcs_ftoa(double f, wchar_t* buf, int precision);
 
-	void debug_text(const char* text);
-	void debug_text(const char* text, uintptr_t val, int notation, uintptr_t spoof_caller_address);
-	void debug_text(const char* text, float val, uintptr_t spoof_caller_address);
+	void debug_text(const char* text, uintptr_t spoof_caller_address);
+	void debug_integer(const char* text, uintptr_t val, int notation, uintptr_t spoof_caller_address);
+	void debug_float(const char* text, float val, uintptr_t spoof_caller_address);
 }
