@@ -72,7 +72,7 @@ namespace g_cheat::memory::hooks {
 
 	void c_vmt::setup_hook(size_t index, void* function_ptr) {
 		//retard control xD
-		if (index >= m_current_vtable_size || index < 0) {
+		if (!m_hooked_table || index >= m_current_vtable_size || index < 0) {
 			return;
 		}
 
@@ -81,7 +81,7 @@ namespace g_cheat::memory::hooks {
 
 	void c_vmt::disable_hook(size_t index) {
 
-		if (index >= m_current_vtable_size || index < 0) {
+		if (!m_hooked_table || index >= m_current_vtable_size || index < 0) {
 			return;
 		}
 

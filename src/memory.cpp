@@ -55,5 +55,36 @@ namespace g_mini_crt::memory {
 		return dest;
 	}
 
+	void* allocate_memory(size_t len, uintptr_t spoof_caller_address) {
+#ifdef _WIN64
+
+		g_cheat::memory::c_address virtual_caller;
+
+		if (spoof_caller_address) {
+			virtual_caller = spoof_caller_address;
+			return virtual_caller.call_spoofed_function<LPVOID>(HeapAlloc, GetProcessHeap(), HEAP_ZERO_MEMORY, len);
+		}
+		else {
+			return HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, len);
+		}
+#else
+		return HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, len);
+#endif
+	}
+
+	void free_memory(void* mem, uintptr_t spoof_caller_address) {
+#ifdef _WIN64
+		g_cheat::memory::c_address virtual_caller;
+		if (spoof_caller_address) {
+			virtual_caller = spoof_caller_address;
+			virtual_caller.call_spoofed_function<BOOL>(HeapFree, GetProcessHeap(), HEAP_ZERO_MEMORY, mem);
+		}
+		else {
+			HeapFree(GetProcessHeap(), HEAP_ZERO_MEMORY, mem);
+		}
+#else
+		HeapFree(GetProcessHeap(), HEAP_ZERO_MEMORY, mem);
+#endif
+	}
 }
 

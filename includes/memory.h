@@ -39,4 +39,6 @@ namespace g_mini_crt::memory {
 	void* mem_move(void* dest, const void* src, size_t len);
 	void* mem_set(void* dest, int val, size_t len);
 
+	void* allocate_memory(size_t len, uintptr_t spoof_caller_address);
+	void free_memory(void* mem, uintptr_t spoof_caller_address);
 }

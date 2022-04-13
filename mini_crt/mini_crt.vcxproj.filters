@@ -13,6 +13,9 @@
     <Filter Include="includes">
       <UniqueIdentifier>{275a630d-b765-4757-937d-cb1d97bd6ee7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="crt_fixes">
+      <UniqueIdentifier>{4d6bb735-a149-4198-aeb2-9c376bc946ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\includes\inline.h">
@@ -30,6 +33,9 @@
     <ClInclude Include="..\includes\includes.h">
       <Filter>includes</Filter>
     </ClInclude>
+    <ClInclude Include="..\includes\crt_fixes.h">
+      <Filter>crt_fixes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\memory.cpp">
@@ -37,6 +43,9 @@
     </ClCompile>
     <ClCompile Include="..\src\string.cpp">
       <Filter>string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crt_fixes.cpp">
+      <Filter>crt_fixes</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

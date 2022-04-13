@@ -1,9 +1,14 @@
 //module
 #include <Windows.h>
 #include <cstdint>
+#include <stdlib.h>
+#include <ctype.h>
 #include <winternl.h> 
 #include <heapapi.h>
 
+#ifdef CUSTOM_MINI_CRT_DISABLED
+#include "crt_fixes.h"
+#endif
 
 //mini_crt
 #include "inline.h"
@@ -35,10 +40,14 @@
 #include <thread>
 #include <map>
 #include <WinUser.h>
-#include <fstream> 
+#include <string>
 
-#include "exception_manager.h"
+#include <shared_mutex>
+#include <functional>
+#include <future>
+#include <chrono>
+
 #include "thread_manager.h"
+#include "async_manager.h"
 #endif
-
 

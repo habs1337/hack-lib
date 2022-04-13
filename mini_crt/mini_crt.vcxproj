@@ -178,6 +178,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\includes\crt_fixes.h" />
     <ClInclude Include="..\includes\includes.h" />
     <ClInclude Include="..\includes\inline.h" />
     <ClInclude Include="..\includes\memory.h" />
@@ -185,6 +186,7 @@
     <ClInclude Include="..\includes\vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\crt_fixes.cpp" />
     <ClCompile Include="..\src\memory.cpp" />
     <ClCompile Include="..\src\string.cpp" />
   </ItemGroup>

@@ -183,8 +183,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\includes\address.h" />
+    <ClInclude Include="..\includes\async_manager.h" />
     <ClInclude Include="..\includes\color.h" />
-    <ClInclude Include="..\includes\exception_manager.h" />
     <ClInclude Include="..\includes\hook_manager.h" />
     <ClInclude Include="..\includes\inline.h" />
     <ClInclude Include="..\includes\math.h" />
@@ -199,7 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\color.cpp" />
-    <ClCompile Include="..\src\exception_manager.cpp" />
     <ClCompile Include="..\src\hook_manager.cpp" />
     <ClCompile Include="..\src\math.cpp" />
     <ClCompile Include="..\src\module.cpp" />
